@@ -7,7 +7,7 @@ public class StreamCollect2 {
 
 	public static void main(String[] args) {
 		//Stream.collect() using Supplier, Accumulator and Combiner
-		//供应- 收集-聚合
+		//供应-收集-聚合
 		List<String> list = Arrays.asList("tom","jack","grace");
 		String result = list.parallelStream().collect(StringBuilder::new
 				,(response,element) -> response.append("###").append(element)

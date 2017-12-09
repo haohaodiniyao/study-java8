@@ -25,6 +25,7 @@ public class ReduceDemo1 {
 		System.out.println("res:"+res);
 		List<String> list1 = Arrays.asList("tom","grace","jack");
 		String result = list1.parallelStream().reduce("#", (s1,s2)-> s1+s2,(p,q)->p+q);
+		//result:#tom#grace#jack
 		System.out.println("result:"+result);
 	}
 
