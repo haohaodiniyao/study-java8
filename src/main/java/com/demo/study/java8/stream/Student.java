@@ -10,6 +10,11 @@ public class Student implements Comparable<Student>{
 		this.age = age;
 	}
 	
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
 	public Student(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -71,5 +76,7 @@ public class Student implements Comparable<Student>{
 			return false;
 		return true;
 	}
-	
+	public String printData(){
+		return this.name+","+this.age;
+	}
 }

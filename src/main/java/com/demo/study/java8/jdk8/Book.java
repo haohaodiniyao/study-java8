@@ -1,5 +1,7 @@
 package com.demo.study.java8.jdk8;
 
+import java.util.function.Function;
+
 public class Book {
 	private String name;
 	private int price;
@@ -46,5 +48,7 @@ public class Book {
 		return true;
 	}
 	
-	
+	public String customShow(Function<Book,String> fun){
+		return fun.apply(this);
+	}
 }
